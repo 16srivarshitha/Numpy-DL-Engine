@@ -35,7 +35,7 @@ class Sigmoid:
 
 class Linear:
     def __init__(self, input_size, output_size, activation=None):
-        # He initialization
+        # initialization
         self.weights = np.random.randn(input_size, output_size) * np.sqrt(2.0 / input_size)
         self.bias = np.zeros((1, output_size))
         self.activation = activation if activation else Identity()
